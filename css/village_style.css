@@ -1,0 +1,3023 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "AtypDisplay";
+  src: url(../fonts/AtypDisplay-Regular.ttf);
+  font-weight: 400;
+}
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.container_mod {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wraper_main {
+  position: relative;
+  width: 100%;
+}
+
+.village_top_block_v {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  background: rgba(29, 36, 60, 0.5);
+  padding-top: 168px;
+}
+.village_top_block_v .village_top_zag_1 {
+  width: 100%;
+  margin-bottom: -42px;
+}
+.village_top_block_v .village_top_zag_1 p {
+  font-size: 30px;
+  line-height: 1.4em;
+  color: #fff;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.village_top_block_v .village_top_zag_2 {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 37px;
+}
+.village_top_block_v .village_top_zag_2 h2 {
+  display: inline-block;
+  font-size: 200px;
+  line-height: 1.15em;
+  color: #fff;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 146px;
+}
+.village_top_block_v .village_top_zag_2 .village_top_play {
+  width: 188px;
+  height: 188px;
+}
+.village_top_block_v .village_top_zag_2 .village_top_play img {
+  width: 100%;
+  height: 100%;
+}
+.village_top_block_v .village_top_text {
+  width: 100%;
+}
+.village_top_block_v .village_top_text p {
+  width: 716px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+.village_top_block_v::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+}
+
+.secluded_quarter_v {
+  width: 100%;
+  background-color: #1D243C;
+  padding-top: 75px;
+  padding-bottom: 111px;
+}
+.secluded_quarter_v .secluded_quarter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_content h2 {
+  width: 657px;
+  color: #fff;
+  font-size: 64px;
+  line-height: 1.1em;
+  font-weight: 400;
+  font-family: "AtypDisplay";
+  margin-bottom: 19px;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_content p {
+  width: 454px;
+  color: #A8D29F;
+  font-size: 30px;
+  line-height: 1.4em;
+  font-weight: 400;
+  font-family: "AtypDisplay";
+  margin-bottom: 66px;
+  text-transform: uppercase;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_content a {
+  width: 374px;
+  height: 61px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_img {
+  width: 571px;
+}
+.secluded_quarter_v .secluded_quarter .secluded_quarter_img img {
+  width: 100%;
+}
+
+.houses_for_sale_v {
+  width: 100%;
+}
+.houses_for_sale_v .houses_for_sale_zag {
+  max-width: 1920px;
+  margin: 0 auto;
+  color: #1D243C;
+  font-weight: 400;
+  font-family: "AtypDisplay";
+  font-size: 153px;
+  line-height: 1.4em;
+  padding-top: 103px;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.houses_for_sale_v .houses_for_sale {
+  width: 100%;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img {
+  width: 100%;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img img {
+  width: 100%;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item {
+  width: 188px;
+  height: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "AtypDisplay";
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item.zabr {
+  color: #FFB27D;
+  border: 3px solid #FFB27D;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(2) {
+  position: absolute;
+  top: 15%;
+  left: 23%;
+}
+.houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(3) {
+  position: absolute;
+  top: 58%;
+  left: 61%;
+}
+.houses_for_sale_v .houses_for_sale_text {
+  position: absolute;
+  z-index: 10;
+  width: 625px;
+  height: 263px;
+  background-color: #1D243C;
+  padding: 42px;
+  margin-top: -163px;
+}
+.houses_for_sale_v .houses_for_sale_text h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  font-family: "AtypDisplay";
+  padding-right: 10px;
+  margin-bottom: 39px;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item span {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: 3px solid #FFB27D;
+  border-radius: 50%;
+  margin-right: 22px;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item p {
+  font-size: 16px;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #FFB27D;
+  text-transform: uppercase;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) {
+  margin-left: 78px;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) span {
+  border: 3px solid #fff;
+}
+.houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) p {
+  color: #fff;
+}
+
+.gallery_v {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 192px;
+  overflow: hidden;
+  padding-bottom: 154px;
+}
+.gallery_v .gallery_zag {
+  width: 100%;
+  color: #1D243C;
+  font-size: 200px;
+  line-height: 1.4em;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}
+.gallery_v .gallery_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.gallery_v .gallery_buttons .gallery_button_left {
+  width: 45px;
+}
+.gallery_v .gallery_buttons .gallery_button_left img {
+  width: 100%;
+}
+.gallery_v .gallery_buttons .gallery_button_right {
+  width: 45px;
+  margin-left: 37px;
+}
+.gallery_v .gallery_buttons .gallery_button_right img {
+  width: 100%;
+}
+.gallery_v .gallery {
+  width: 100%;
+}
+.gallery_v .gallery .gallery_item {
+  width: 557px;
+  height: 395px;
+}
+.gallery_v .gallery .gallery_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery_v .gallery .slick-list {
+  margin-right: 180px;
+}
+.gallery_v .gallery .slick-list .slick-track {
+  display: flex;
+}
+.gallery_v .gallery .slick-list .slick-track .slick-slide {
+  margin-right: 30px;
+}
+
+.village_map_v {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.village_map_v .village_map {
+  position: relative;
+}
+.village_map_v .village_map .village_map_img {
+  height: 1247px;
+}
+.village_map_v .village_map .village_map_item {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content {
+  display: none;
+  position: absolute;
+  z-index: 120;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 35px 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #7b7f7c;
+  background-color: #fff;
+  box-shadow: 0 0 15px #7b7f7c;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content span {
+  color: #1D243C;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1D243C;
+  margin: 0 10px;
+  border-bottom: 3px solid #b1c2b1;
+  padding-bottom: 3px;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content a img {
+  margin-left: 10px;
+  width: 23px;
+  margin-bottom: 0px;
+}
+.village_map_v .village_map .village_map_item .village_map_item_content.village_map_link {
+  width: 400px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.village_map_v .village_map .village_map_item::after {
+  content: "";
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100px;
+  height: 200px;
+}
+.village_map_v .village_map .village_map_item.active .village_map_item_content {
+  display: block;
+}
+.village_map_v .village_map .village_map_item.active .village_map_item_content.village_map_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.village_map_v .village_map .village_map_item.active::after {
+  content: "";
+  display: block;
+}
+.village_map_v .village_map .village_map_item:nth-child(2) {
+  position: absolute;
+  top: 108px;
+  left: 494px;
+}
+.village_map_v .village_map .village_map_item:nth-child(3) {
+  position: absolute;
+  top: 123px;
+  left: 594px;
+}
+.village_map_v .village_map .village_map_item:nth-child(3) .village_map_item_content {
+  top: 50%;
+  left: 100%;
+  transform: translate(10%, -50%);
+}
+.village_map_v .village_map .village_map_item:nth-child(4) {
+  position: absolute;
+  top: 135px;
+  left: 676px;
+}
+.village_map_v .village_map .village_map_item:nth-child(5) {
+  position: absolute;
+  top: 145px;
+  left: 760px;
+}
+.village_map_v .village_map .village_map_item:nth-child(6) {
+  position: absolute;
+  top: 158px;
+  left: 850px;
+}
+.village_map_v .village_map .village_map_item:nth-child(7) {
+  position: absolute;
+  top: 170px;
+  left: 935px;
+}
+.village_map_v .village_map .village_map_item:nth-child(8) {
+  position: absolute;
+  top: 185px;
+  left: 1035px;
+}
+.village_map_v .village_map .village_map_item:nth-child(9) {
+  position: absolute;
+  top: 198px;
+  left: 1125px;
+}
+.village_map_v .village_map .village_map_item:nth-child(10) {
+  position: absolute;
+  top: 215px;
+  left: 1253px;
+}
+.village_map_v .village_map .village_map_item:nth-child(11) {
+  position: absolute;
+  top: 234px;
+  left: 1377px;
+}
+.village_map_v .village_map .village_map_item:nth-child(12) {
+  position: absolute;
+  top: 251px;
+  left: 1504px;
+}
+.village_map_v .village_map .village_map_item:nth-child(13) {
+  position: absolute;
+  top: 240px;
+  left: 489px;
+}
+.village_map_v .village_map .village_map_item:nth-child(13) .village_map_item_content {
+  top: 50%;
+  left: 100%;
+  transform: translate(10%, -50%);
+}
+.village_map_v .village_map .village_map_item:nth-child(14) {
+  position: absolute;
+  top: 312px;
+  left: 569px;
+}
+.village_map_v .village_map .village_map_item:nth-child(15) {
+  position: absolute;
+  top: 320px;
+  left: 693px;
+}
+.village_map_v .village_map .village_map_item:nth-child(16) {
+  position: absolute;
+  top: 427px;
+  left: 517px;
+}
+.village_map_v .village_map .village_map_item:nth-child(17) {
+  position: absolute;
+  top: 478px;
+  left: 652px;
+}
+.village_map_v .village_map .village_map_item:nth-child(18) {
+  position: absolute;
+  top: 524px;
+  left: 495px;
+}
+.village_map_v .village_map .village_map_item:nth-child(19) {
+  position: absolute;
+  top: 622px;
+  left: 475px;
+}
+.village_map_v .village_map .village_map_item:nth-child(20) {
+  position: absolute;
+  top: 624px;
+  left: 612px;
+}
+.village_map_v .village_map .village_map_item:nth-child(21) {
+  position: absolute;
+  top: 740px;
+  left: 450px;
+}
+.village_map_v .village_map .village_map_item:nth-child(22) {
+  position: absolute;
+  top: 760px;
+  left: 585px;
+}
+.village_map_v .village_map .village_map_item:nth-child(23) {
+  position: absolute;
+  top: 893px;
+  left: 478px;
+}
+.village_map_v .village_map .village_map_item:nth-child(23) .village_map_item_content {
+  top: 50%;
+  left: 100%;
+  transform: translate(10%, -50%);
+}
+.village_map_v .village_map .village_map_item:nth-child(24) {
+  position: absolute;
+  top: 568px;
+  left: 48px;
+}
+.village_map_v .village_map .village_map_item:nth-child(24) .village_map_item_content {
+  top: 50%;
+  left: 100%;
+  transform: translate(10%, -50%);
+}
+.village_map_v .village_map .village_map_item:nth-child(25) {
+  position: absolute;
+  top: 625px;
+  left: 263px;
+}
+.village_map_v .village_map .village_map_item:nth-child(26) {
+  position: absolute;
+  top: 725px;
+  left: 273px;
+}
+.village_map_v .village_map .village_map_item:nth-child(27) {
+  position: absolute;
+  top: 835px;
+  left: 335px;
+}
+.village_map_v .village_map .village_map_item:nth-child(27) .village_map_item_content {
+  top: 50%;
+  left: 100%;
+  transform: translate(10%, -50%);
+}
+.village_map_v .village_map .village_map_item:nth-child(28) {
+  position: absolute;
+  top: 340px;
+  left: 870px;
+}
+.village_map_v .village_map .village_map_item:nth-child(29) {
+  position: absolute;
+  top: 355px;
+  left: 970px;
+}
+.village_map_v .village_map .village_map_item:nth-child(30) {
+  position: absolute;
+  top: 500px;
+  left: 830px;
+}
+.village_map_v .village_map .village_map_item:nth-child(31) {
+  position: absolute;
+  top: 488px;
+  left: 961px;
+}
+.village_map_v .village_map .village_map_item:nth-child(32) {
+  position: absolute;
+  top: 604px;
+  left: 802px;
+}
+.village_map_v .village_map .village_map_item:nth-child(33) {
+  position: absolute;
+  top: 710px;
+  left: 774px;
+}
+.village_map_v .village_map .village_map_item:nth-child(34) {
+  position: absolute;
+  top: 736px;
+  left: 898px;
+}
+.village_map_v .village_map .village_map_item:nth-child(35) {
+  position: absolute;
+  top: 803px;
+  left: 752px;
+}
+.village_map_v .village_map .village_map_item:nth-child(36) {
+  position: absolute;
+  top: 478px;
+  left: 1186px;
+}
+.village_map_v .village_map .village_map_item:nth-child(37) {
+  position: absolute;
+  top: 582px;
+  left: 1139px;
+}
+.village_map_v .village_map .village_map_item:nth-child(38) {
+  position: absolute;
+  top: 628px;
+  left: 1259px;
+}
+.village_map_v .village_map .village_map_item:nth-child(39) {
+  position: absolute;
+  top: 678px;
+  left: 1092px;
+}
+.village_map_v .village_map .village_map_item:nth-child(40) {
+  position: absolute;
+  top: 722px;
+  left: 1214px;
+}
+.village_map_v .village_map .village_map_item:nth-child(41) {
+  position: absolute;
+  top: 762px;
+  left: 1050px;
+}
+.village_map_v .village_map .village_map_item:nth-child(42) {
+  position: absolute;
+  top: 805px;
+  left: 1174px;
+}
+
+.village_bottom_block_v {
+  width: 100%;
+  padding-top: 91px;
+  position: relative;
+  padding-bottom: 95px;
+}
+.village_bottom_block_v h3 {
+  color: #1D243C;
+  font-size: 30px;
+  line-height: 1.1em;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.village_bottom_block_v h2 {
+  color: #1D243C;
+  font-size: 200px;
+  line-height: 1em;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.village_bottom_block_v .village_bottom_text {
+  width: 952px;
+  color: #1D243C;
+  font-size: 44px;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+  font-family: "AtypDisplay";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.village_bottom_block_v .village_bottom_img {
+  position: absolute;
+  top: 273px;
+  right: 0;
+  width: 508px;
+  height: 430px;
+}
+.village_bottom_block_v .village_bottom_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1760px) {
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 91px;
+    position: relative;
+    padding-bottom: 95px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 30px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v h2 {
+    color: #1D243C;
+    font-size: 185px;
+    line-height: 1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 952px;
+    color: #1D243C;
+    font-size: 44px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: absolute;
+    top: 273px;
+    right: 0;
+    width: 508px;
+    height: 430px;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .header_v {
+    background-color: transparent;
+  }
+
+  .village_top_block_v {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background: rgba(29, 36, 60, 0.5);
+    padding-top: 168px;
+  }
+  .village_top_block_v .village_top_zag_1 {
+    width: 100%;
+    margin-bottom: -35px;
+  }
+  .village_top_block_v .village_top_zag_1 p {
+    font-size: 30px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_top_block_v .village_top_zag_2 {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 32px;
+  }
+  .village_top_block_v .village_top_zag_2 h2 {
+    display: inline-block;
+    font-size: 156px;
+    line-height: 1.15em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 146px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play {
+    width: 170px;
+    height: 170px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play img {
+    width: 100%;
+    height: 100%;
+  }
+  .village_top_block_v .village_top_text {
+    width: 100%;
+  }
+  .village_top_block_v .village_top_text p {
+    width: 716px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .village_top_block_v::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+  }
+
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 91px;
+    position: relative;
+    padding-bottom: 95px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 30px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v h2 {
+    color: #1D243C;
+    font-size: 150px;
+    line-height: 1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 800px;
+    color: #1D243C;
+    font-size: 44px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: absolute;
+    top: 290px;
+    right: 0;
+    width: 470px;
+    height: 400px;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 964px;
+  }
+
+  .header_v {
+    background-color: transparent;
+  }
+
+  .village_top_block_v {
+    width: 100%;
+    height: 750px;
+    position: relative;
+    background: rgba(29, 36, 60, 0.5);
+    padding-top: 190px;
+  }
+  .village_top_block_v .village_top_zag_1 {
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .village_top_block_v .village_top_zag_1 p {
+    font-size: 26px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_top_block_v .village_top_zag_2 {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 25px;
+  }
+  .village_top_block_v .village_top_zag_2 h2 {
+    display: inline-block;
+    font-size: 113px;
+    line-height: 1.15em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 120px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play {
+    width: 130px;
+    height: 130px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play img {
+    width: 100%;
+    height: 100%;
+  }
+  .village_top_block_v .village_top_text {
+    width: 100%;
+  }
+  .village_top_block_v .village_top_text p {
+    width: 716px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .village_top_block_v::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+  }
+
+  .secluded_quarter_v {
+    width: 100%;
+    background-color: #1D243C;
+    padding-top: 75px;
+    padding-bottom: 111px;
+  }
+  .secluded_quarter_v .secluded_quarter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content h2 {
+    width: 550px;
+    color: #fff;
+    font-size: 53px;
+    line-height: 1.1em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 19px;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content p {
+    width: 380px;
+    color: #A8D29F;
+    font-size: 26px;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 66px;
+    text-transform: uppercase;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content a {
+    width: 374px;
+    height: 61px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img {
+    width: 510px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img img {
+    width: 100%;
+  }
+
+  .houses_for_sale_v {
+    width: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale_zag {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    font-size: 153px;
+    line-height: 1.4em;
+    padding-top: 103px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+  }
+  .houses_for_sale_v .houses_for_sale {
+    width: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img {
+    width: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img img {
+    width: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item.zabr {
+    color: #FFB27D;
+    border: 3px solid #FFB27D;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(2) {
+    position: absolute;
+    top: 15%;
+    left: 23%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(3) {
+    position: absolute;
+    top: 58%;
+    left: 61%;
+  }
+  .houses_for_sale_v .houses_for_sale_text {
+    position: absolute;
+    z-index: 10;
+    width: 550px;
+    height: 235px;
+    background-color: #1D243C;
+    padding: 42px;
+    margin-top: -70px;
+  }
+  .houses_for_sale_v .houses_for_sale_text h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: "AtypDisplay";
+    padding-right: 10px;
+    margin-bottom: 39px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #FFB27D;
+    border-radius: 50%;
+    margin-right: 22px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item p {
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #FFB27D;
+    text-transform: uppercase;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) {
+    margin-left: 50px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) span {
+    border: 3px solid #fff;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) p {
+    color: #fff;
+  }
+
+  .gallery_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 192px;
+    overflow: hidden;
+    padding-bottom: 154px;
+  }
+  .gallery_v .gallery_zag {
+    width: 100%;
+    color: #1D243C;
+    font-size: 156px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+  }
+  .gallery_v .gallery_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left {
+    width: 45px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left img {
+    width: 100%;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right {
+    width: 45px;
+    margin-left: 37px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right img {
+    width: 100%;
+  }
+  .gallery_v .gallery {
+    width: 100%;
+  }
+  .gallery_v .gallery .gallery_item {
+    width: 557px;
+    height: 395px;
+  }
+  .gallery_v .gallery .gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery_v .gallery .slick-list {
+    margin-right: 180px;
+  }
+  .gallery_v .gallery .slick-list .slick-track {
+    display: flex;
+  }
+  .gallery_v .gallery .slick-list .slick-track .slick-slide {
+    margin-right: 30px;
+  }
+
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 91px;
+    position: relative;
+    padding-bottom: 95px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 26px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v h2 {
+    color: #1D243C;
+    font-size: 113px;
+    line-height: 1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 630px;
+    color: #1D243C;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: absolute;
+    top: 290px;
+    right: 0;
+    width: 360px;
+    height: 330px;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 707px;
+  }
+
+  .header_v {
+    background-color: transparent;
+  }
+
+  .village_top_block_v {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: rgba(29, 36, 60, 0.5);
+    padding-top: 230px;
+  }
+  .village_top_block_v .village_top_zag_1 {
+    width: 100%;
+    margin-bottom: -15px;
+  }
+  .village_top_block_v .village_top_zag_1 p {
+    font-size: 23px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_top_block_v .village_top_zag_2 {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 22px;
+  }
+  .village_top_block_v .village_top_zag_2 h2 {
+    display: inline-block;
+    font-size: 90px;
+    line-height: 1.15em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 70px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play {
+    width: 100px;
+    height: 100px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play img {
+    width: 100%;
+    height: 100%;
+  }
+  .village_top_block_v .village_top_text {
+    width: 100%;
+  }
+  .village_top_block_v .village_top_text p {
+    width: 620px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .village_top_block_v::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+  }
+
+  .secluded_quarter_v {
+    width: 100%;
+    background-color: #1D243C;
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+  .secluded_quarter_v .secluded_quarter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content h2 {
+    width: 410px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.1em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 19px;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content p {
+    width: 290px;
+    color: #A8D29F;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 45px;
+    text-transform: uppercase;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content a {
+    width: 290px;
+    height: 48px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img {
+    width: 390px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img img {
+    width: 100%;
+  }
+
+  .houses_for_sale_v {
+    width: 100%;
+    background-color: #1D243C;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .houses_for_sale_v .houses_for_sale_zag {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    font-size: 90px;
+    line-height: 1.4em;
+    padding-top: 103px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+  }
+  .houses_for_sale_v::after {
+    content: "";
+    width: 1000%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+  .houses_for_sale_v .houses_for_sale {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img {
+    width: auto;
+    height: 430px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img img {
+    width: auto;
+    height: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item.zabr {
+    color: #FFB27D;
+    border: 3px solid #FFB27D;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 290px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(3) {
+    position: absolute;
+    top: 245px;
+    left: 795px;
+  }
+  .houses_for_sale_v .houses_for_sale_text {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #1D243C;
+    padding: 43px 0px 57px 0px;
+    margin-top: 0px;
+  }
+  .houses_for_sale_v .houses_for_sale_text h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: "AtypDisplay";
+    padding-right: 10px;
+    margin-bottom: 43px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item span {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #FFB27D;
+    border-radius: 50%;
+    margin-right: 22px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item p {
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #FFB27D;
+    text-transform: uppercase;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 19px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) span {
+    border: 3px solid #fff;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) p {
+    color: #fff;
+  }
+
+  .gallery_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 192px;
+    overflow: hidden;
+    padding-bottom: 120px;
+  }
+  .gallery_v .gallery_zag {
+    width: 100%;
+    color: #1D243C;
+    font-size: 110px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .gallery_v .gallery_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left {
+    width: 45px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left img {
+    width: 100%;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right {
+    width: 45px;
+    margin-left: 37px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right img {
+    width: 100%;
+  }
+  .gallery_v .gallery {
+    width: 100%;
+  }
+  .gallery_v .gallery .gallery_item {
+    width: 557px;
+    height: 280px;
+  }
+  .gallery_v .gallery .gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery_v .gallery .slick-list {
+    margin-right: 180px;
+  }
+  .gallery_v .gallery .slick-list .slick-track {
+    display: flex;
+  }
+  .gallery_v .gallery .slick-list .slick-track .slick-slide {
+    margin-right: 30px;
+  }
+
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 91px;
+    position: relative;
+    padding-bottom: 95px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 20px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v h2 {
+    color: #1D243C;
+    font-size: 90px;
+    line-height: 1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 440px;
+    color: #1D243C;
+    font-size: 26px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: absolute;
+    top: 290px;
+    right: 0;
+    width: 300px;
+    height: 280px;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .village_map_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+  .village_map_v .village_map {
+    position: relative;
+  }
+  .village_map_v .village_map .village_map_img {
+    height: 700px;
+  }
+  .village_map_v .village_map .village_map_item {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content {
+    display: none;
+    position: absolute;
+    z-index: 120;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7b7f7c;
+    background-color: #fff;
+    box-shadow: 0 0 15px #7b7f7c;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content a {
+    color: #1D243C;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content span {
+    color: #1D243C;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1D243C;
+    margin: 0 10px;
+    border-bottom: 3px solid #b1c2b1;
+    padding-bottom: 3px;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content a img {
+    margin-left: 10px;
+    width: 17px;
+    margin-bottom: 0px;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content.village_map_link {
+    width: 300px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .village_map_v .village_map .village_map_item::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45px;
+    height: 100px;
+  }
+  .village_map_v .village_map .village_map_item.active .village_map_item_content {
+    display: block;
+  }
+  .village_map_v .village_map .village_map_item.active::after {
+    content: "";
+    display: block;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(2) {
+    position: absolute;
+    top: 60px;
+    left: 277px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(3) {
+    position: absolute;
+    top: 68.8px;
+    left: 332px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(3) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(4) {
+    position: absolute;
+    top: 75px;
+    left: 379px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(5) {
+    position: absolute;
+    top: 81px;
+    left: 425.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(6) {
+    position: absolute;
+    top: 88.5px;
+    left: 476px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(7) {
+    position: absolute;
+    top: 95px;
+    left: 523px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(8) {
+    position: absolute;
+    top: 103.6px;
+    left: 579.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(9) {
+    position: absolute;
+    top: 111px;
+    left: 630px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(10) {
+    position: absolute;
+    top: 120px;
+    left: 701.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(11) {
+    position: absolute;
+    top: 131px;
+    left: 771px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(12) {
+    position: absolute;
+    top: 140.5px;
+    left: 842px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(13) {
+    position: absolute;
+    top: 134.4px;
+    left: 274px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(13) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(14) {
+    position: absolute;
+    top: 175px;
+    left: 319px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(15) {
+    position: absolute;
+    top: 179px;
+    left: 388px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(16) {
+    position: absolute;
+    top: 239px;
+    left: 289px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(17) {
+    position: absolute;
+    top: 268px;
+    left: 365px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(18) {
+    position: absolute;
+    top: 293px;
+    left: 277px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(19) {
+    position: absolute;
+    top: 348px;
+    left: 266px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(20) {
+    position: absolute;
+    top: 349px;
+    left: 343px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(21) {
+    position: absolute;
+    top: 414px;
+    left: 252px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(22) {
+    position: absolute;
+    top: 426px;
+    left: 328px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(23) {
+    position: absolute;
+    top: 500px;
+    left: 268px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(23) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(24) {
+    position: absolute;
+    top: 318px;
+    left: 27px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(24) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(25) {
+    position: absolute;
+    top: 350px;
+    left: 147px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(26) {
+    position: absolute;
+    top: 406px;
+    left: 153px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(27) {
+    position: absolute;
+    top: 468px;
+    left: 188px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(27) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(28) {
+    position: absolute;
+    top: 190px;
+    left: 487px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(29) {
+    position: absolute;
+    top: 199px;
+    left: 543px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(30) {
+    position: absolute;
+    top: 280px;
+    left: 465px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(31) {
+    position: absolute;
+    top: 273px;
+    left: 538px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(32) {
+    position: absolute;
+    top: 338px;
+    left: 449px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(33) {
+    position: absolute;
+    top: 398px;
+    left: 433px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(34) {
+    position: absolute;
+    top: 412px;
+    left: 503px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(35) {
+    position: absolute;
+    top: 450px;
+    left: 421px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(36) {
+    position: absolute;
+    top: 268px;
+    left: 664px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(37) {
+    position: absolute;
+    top: 326px;
+    left: 638px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(38) {
+    position: absolute;
+    top: 352px;
+    left: 705px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(39) {
+    position: absolute;
+    top: 380px;
+    left: 611px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(40) {
+    position: absolute;
+    top: 404px;
+    left: 680px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(41) {
+    position: absolute;
+    top: 427px;
+    left: 588px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(42) {
+    position: absolute;
+    top: 451px;
+    left: 657px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 410px;
+  }
+
+  .header_v {
+    background-color: transparent;
+  }
+
+  .village_top_block_v {
+    width: 100%;
+    height: auto;
+    padding-bottom: 55px;
+    position: relative;
+    background: rgba(29, 36, 60, 0.5);
+    padding-top: 230px;
+  }
+  .village_top_block_v .village_top_zag_1 {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .village_top_block_v .village_top_zag_1 p {
+    font-size: 19px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_top_block_v .village_top_zag_2 {
+    max-width: 410px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .village_top_block_v .village_top_zag_2 h2 {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 1.15em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 70px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play {
+    position: absolute;
+    bottom: -17px;
+    left: 325px;
+    width: 85px;
+    height: 85px;
+    background: url("../img/play_mob.png") 0 0/100% 100% no-repeat;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play img {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .village_top_block_v .village_top_text {
+    width: 100%;
+  }
+  .village_top_block_v .village_top_text p {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .village_top_block_v::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+  }
+
+  .village_map_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+  .village_map_v .village_map {
+    position: relative;
+  }
+  .village_map_v .village_map .village_map_img {
+    height: 700px;
+  }
+  .village_map_v .village_map .village_map_item {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content {
+    display: none;
+    position: absolute;
+    z-index: 120;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7b7f7c;
+    background-color: #fff;
+    box-shadow: 0 0 15px #7b7f7c;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .village_map_v .village_map .village_map_item .village_map_item_content a {
+    color: #1D243C;
+  }
+  .village_map_v .village_map .village_map_item::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 45px;
+    height: 100px;
+  }
+  .village_map_v .village_map .village_map_item.active .village_map_item_content {
+    display: block;
+  }
+  .village_map_v .village_map .village_map_item.active::after {
+    content: "";
+    display: block;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(2) {
+    position: absolute;
+    top: 60px;
+    left: 277px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(3) {
+    position: absolute;
+    top: 68.8px;
+    left: 332px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(3) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(4) {
+    position: absolute;
+    top: 75px;
+    left: 379px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(5) {
+    position: absolute;
+    top: 81px;
+    left: 425.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(6) {
+    position: absolute;
+    top: 88.5px;
+    left: 476px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(7) {
+    position: absolute;
+    top: 95px;
+    left: 523px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(8) {
+    position: absolute;
+    top: 103.6px;
+    left: 579.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(9) {
+    position: absolute;
+    top: 111px;
+    left: 630px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(10) {
+    position: absolute;
+    top: 120px;
+    left: 701.6px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(11) {
+    position: absolute;
+    top: 131px;
+    left: 771px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(12) {
+    position: absolute;
+    top: 140.5px;
+    left: 842px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(13) {
+    position: absolute;
+    top: 134.4px;
+    left: 274px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(13) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(14) {
+    position: absolute;
+    top: 175px;
+    left: 319px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(15) {
+    position: absolute;
+    top: 179px;
+    left: 388px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(16) {
+    position: absolute;
+    top: 239px;
+    left: 289px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(17) {
+    position: absolute;
+    top: 268px;
+    left: 365px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(18) {
+    position: absolute;
+    top: 293px;
+    left: 277px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(19) {
+    position: absolute;
+    top: 348px;
+    left: 266px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(20) {
+    position: absolute;
+    top: 349px;
+    left: 343px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(21) {
+    position: absolute;
+    top: 414px;
+    left: 252px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(22) {
+    position: absolute;
+    top: 426px;
+    left: 328px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(23) {
+    position: absolute;
+    top: 500px;
+    left: 268px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(23) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(24) {
+    position: absolute;
+    top: 318px;
+    left: 27px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(24) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(25) {
+    position: absolute;
+    top: 350px;
+    left: 147px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(26) {
+    position: absolute;
+    top: 406px;
+    left: 153px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(27) {
+    position: absolute;
+    top: 468px;
+    left: 188px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(27) .village_map_item_content {
+    top: 50%;
+    left: 100%;
+    transform: translate(10%, -50%);
+  }
+  .village_map_v .village_map .village_map_item:nth-child(28) {
+    position: absolute;
+    top: 190px;
+    left: 487px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(29) {
+    position: absolute;
+    top: 199px;
+    left: 543px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(30) {
+    position: absolute;
+    top: 280px;
+    left: 465px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(31) {
+    position: absolute;
+    top: 273px;
+    left: 538px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(32) {
+    position: absolute;
+    top: 338px;
+    left: 449px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(33) {
+    position: absolute;
+    top: 398px;
+    left: 433px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(34) {
+    position: absolute;
+    top: 412px;
+    left: 503px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(35) {
+    position: absolute;
+    top: 450px;
+    left: 421px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(36) {
+    position: absolute;
+    top: 268px;
+    left: 664px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(37) {
+    position: absolute;
+    top: 326px;
+    left: 638px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(38) {
+    position: absolute;
+    top: 352px;
+    left: 705px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(39) {
+    position: absolute;
+    top: 380px;
+    left: 611px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(40) {
+    position: absolute;
+    top: 404px;
+    left: 680px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(41) {
+    position: absolute;
+    top: 427px;
+    left: 588px;
+  }
+  .village_map_v .village_map .village_map_item:nth-child(42) {
+    position: absolute;
+    top: 451px;
+    left: 657px;
+  }
+
+  .secluded_quarter_v {
+    width: 100%;
+    background-color: #1D243C;
+    padding-top: 55px;
+    padding-bottom: 70px;
+  }
+  .secluded_quarter_v .secluded_quarter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content h2 {
+    width: 330px;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.1em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 15px;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content p {
+    width: 270px;
+    color: #A8D29F;
+    font-size: 18px;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 33px;
+    text-transform: uppercase;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content a {
+    width: 100%;
+    height: 61px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img {
+    display: none;
+    width: 390px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img img {
+    width: 100%;
+  }
+
+  .houses_for_sale_v {
+    width: 100%;
+    background-color: #1D243C;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .houses_for_sale_v .houses_for_sale_zag {
+    max-width: 410px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    font-size: 40px;
+    line-height: 1.4em;
+    padding-top: 75px;
+    padding-bottom: 38px;
+    background-color: #fff;
+  }
+  .houses_for_sale_v::after {
+    content: "";
+    width: 1000%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+  .houses_for_sale_v .houses_for_sale {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img {
+    width: auto;
+    height: 430px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img img {
+    width: auto;
+    height: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item.zabr {
+    color: #FFB27D;
+    border: 3px solid #FFB27D;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 290px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(3) {
+    position: absolute;
+    top: 245px;
+    left: 795px;
+  }
+  .houses_for_sale_v .houses_for_sale_text {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #1D243C;
+    padding: 43px 0px 57px 0px;
+    margin-top: 0px;
+  }
+  .houses_for_sale_v .houses_for_sale_text h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: "AtypDisplay";
+    padding-right: 10px;
+    margin-bottom: 43px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item span {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #FFB27D;
+    border-radius: 50%;
+    margin-right: 22px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item p {
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #FFB27D;
+    text-transform: uppercase;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 19px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) span {
+    border: 3px solid #fff;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) p {
+    color: #fff;
+  }
+
+  .gallery_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 90px;
+    overflow: hidden;
+    padding-bottom: 90px;
+  }
+  .gallery_v .gallery_zag {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-size: 45px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .gallery_v .gallery_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 29px;
+    margin-top: -45px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left {
+    width: 45px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left img {
+    width: 100%;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right {
+    width: 45px;
+    margin-left: 37px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right img {
+    width: 100%;
+  }
+  .gallery_v .gallery {
+    width: 100%;
+  }
+  .gallery_v .gallery .gallery_item {
+    width: 557px;
+    height: 280px;
+  }
+  .gallery_v .gallery .gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery_v .gallery .slick-list {
+    margin-right: 60px;
+  }
+  .gallery_v .gallery .slick-list .slick-track {
+    display: flex;
+  }
+  .gallery_v .gallery .slick-list .slick-track .slick-slide {
+    margin-right: 30px;
+  }
+
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 76px;
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 19px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+  .village_bottom_block_v h2 {
+    width: 410px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-size: 45px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 100%;
+    color: #1D243C;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 410px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    width: 368px;
+  }
+
+  .header_v {
+    background-color: transparent;
+  }
+
+  .village_top_block_v {
+    width: 100%;
+    height: auto;
+    padding-bottom: 35px;
+    position: relative;
+    background: rgba(29, 36, 60, 0.5);
+    padding-top: 212px;
+  }
+  .village_top_block_v .village_top_zag_1 {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .village_top_block_v .village_top_zag_1 p {
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .village_top_block_v .village_top_zag_2 {
+    max-width: 368px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 22px;
+    position: relative;
+  }
+  .village_top_block_v .village_top_zag_2 h2 {
+    display: inline-block;
+    font-size: 27px;
+    line-height: 1.4em;
+    color: #fff;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 70px;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play {
+    position: absolute;
+    bottom: -11px;
+    left: 291px;
+    width: 74px;
+    height: 74px;
+    background: url("../img/play_mob.png") 0 0/100% 100% no-repeat;
+  }
+  .village_top_block_v .village_top_zag_2 .village_top_play img {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  .village_top_block_v .village_top_text {
+    width: 100%;
+  }
+  .village_top_block_v .village_top_text p {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6em;
+  }
+  .village_top_block_v::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../img/pos_top_bgr.png") center/cover no-repeat;
+  }
+
+  .secluded_quarter_v {
+    width: 100%;
+    background-color: #1D243C;
+    padding-top: 45px;
+    padding-bottom: 57px;
+  }
+  .secluded_quarter_v .secluded_quarter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content h2 {
+    width: 230px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.1em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 13px;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content p {
+    width: 222px;
+    color: #A8D29F;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    margin-bottom: 23px;
+    text-transform: uppercase;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_content a {
+    width: 100%;
+    height: 61px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img {
+    display: none;
+    width: 390px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+  .secluded_quarter_v .secluded_quarter .secluded_quarter_img img {
+    width: 100%;
+  }
+
+  .houses_for_sale_v {
+    width: 100%;
+    background-color: #1D243C;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .houses_for_sale_v .houses_for_sale_zag {
+    max-width: 368px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    font-size: 27px;
+    line-height: 1.4em;
+    padding-top: 75px;
+    padding-bottom: 38px;
+    background-color: #fff;
+  }
+  .houses_for_sale_v::after {
+    content: "";
+    width: 1000%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+  }
+  .houses_for_sale_v .houses_for_sale {
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img {
+    width: auto;
+    height: 430px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_bgr_img img {
+    width: auto;
+    height: 100%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "AtypDisplay";
+    border: 3px solid #fff;
+    border-radius: 50%;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item.zabr {
+    color: #FFB27D;
+    border: 3px solid #FFB27D;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 290px;
+  }
+  .houses_for_sale_v .houses_for_sale .houses_for_sale_img .houses_for_sale_img_item:nth-child(3) {
+    position: absolute;
+    top: 245px;
+    left: 795px;
+  }
+  .houses_for_sale_v .houses_for_sale_text {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #1D243C;
+    padding: 43px 0px 57px 0px;
+    margin-top: 0px;
+  }
+  .houses_for_sale_v .houses_for_sale_text h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    font-family: "AtypDisplay";
+    padding-right: 10px;
+    margin-bottom: 43px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item span {
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #FFB27D;
+    border-radius: 50%;
+    margin-right: 22px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item p {
+    font-size: 16px;
+    line-height: 1.4em;
+    font-weight: 700;
+    color: #FFB27D;
+    text-transform: uppercase;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) {
+    margin-left: 0px;
+    margin-top: 19px;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) span {
+    border: 3px solid #fff;
+  }
+  .houses_for_sale_v .houses_for_sale_text .houses_for_sale_text_items .houses_for_sale_text_item:nth-child(2) p {
+    color: #fff;
+  }
+
+  .gallery_v {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 75px;
+    overflow: hidden;
+    padding-bottom: 75px;
+  }
+  .gallery_v .gallery_zag {
+    width: 100%;
+    max-width: 368px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-size: 27px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  .gallery_v .gallery_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: -35px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left {
+    width: 45px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_left img {
+    width: 100%;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right {
+    width: 45px;
+    margin-left: 37px;
+  }
+  .gallery_v .gallery_buttons .gallery_button_right img {
+    width: 100%;
+  }
+  .gallery_v .gallery {
+    width: 100%;
+  }
+  .gallery_v .gallery .gallery_item {
+    width: 557px;
+    height: 255px;
+  }
+  .gallery_v .gallery .gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .gallery_v .gallery .slick-list {
+    margin-right: 38px;
+  }
+  .gallery_v .gallery .slick-list .slick-track {
+    display: flex;
+  }
+  .gallery_v .gallery .slick-list .slick-track .slick-slide {
+    margin-right: 30px;
+  }
+
+  .village_bottom_block_v {
+    width: 100%;
+    padding-top: 76px;
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .village_bottom_block_v h3 {
+    color: #1D243C;
+    font-size: 19px;
+    line-height: 1.1em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+  .village_bottom_block_v h2 {
+    width: 368px;
+    margin: 0 auto;
+    color: #1D243C;
+    font-size: 35px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+  }
+  .village_bottom_block_v .village_bottom_text {
+    width: 100%;
+    color: #1D243C;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+    font-family: "AtypDisplay";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+  }
+  .village_bottom_block_v .village_bottom_img {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 368px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  .village_bottom_block_v .village_bottom_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
